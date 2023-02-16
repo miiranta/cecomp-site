@@ -3,7 +3,30 @@ body{
     padding: 0;
     margin: 0;
 
-    background-color: #1f0017;
+    background-color: #2b1c48;
+
+    -ms-overflow-style: none; 
+    scrollbar-width: none; 
+    overflow-y: scroll; 
+}
+
+body::-webkit-scrollbar {
+    display: none;
+}
+
+h1{
+    padding: 0;
+    margin: 0;
+}
+
+h2{
+    padding: 0;
+    margin: 0;
+}
+
+p{
+    padding: 0;
+    margin: 0;
 }
 
 /*Flexbox shortcuts*/
@@ -65,19 +88,66 @@ body{
     height: 100px;
 }
 
+/*Fonts*/
+.font-bebas{
+    font-family: 'Bebas Neue', cursive;
+}
 
+/*Text types*/
+.text-title{
+    font-family: 'Bebas Neue', cursive;
+    color:white;
+    font-size: 100pt;
+}
 
+.text-subtitle{
+    font-family: 'Bebas Neue', cursive;
+    color:white;
+    font-size: 60pt;
+}
+
+.text-basic{
+    font-family: 'Public Sans', sans-serif;
+    color:white;
+    font-size: 25pt;
+}
+
+/*Margins*/
+.m10{
+    margin: 10px;
+}
+
+.m50{
+    margin: 50px;
+}
+
+.m100{
+    margin: 100px;
+}
 
 /*Logo*/
-
 #logo-main{
-    width: 30vw;
-    height: auto;
+    margin: 10px;
+
+    width: auto;
+    height: 40vh; /*Changes to 25vh with animation*/
+
+    opacity: 0; /*Changes to 1 with animation*/
 }
 
 #logo-div{
     background-color: white;
     overflow: hidden;
+
+    height: 100vh; /*Changes to 25vh with animation*/
 }
+
+/*Greetings*/
+#greetings-div{
+    overflow: hidden;
+    padding-left:100px; 
+    padding-top:80px;
+}
+
 
 
