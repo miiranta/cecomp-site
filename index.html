@@ -10,12 +10,15 @@
     <!-- Dependencies -->
     <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.6.3/jquery.min.js"></script>
     <script src="https://cdnjs.cloudflare.com/ajax/libs/animejs/3.2.1/anime.min.js" integrity="sha512-z4OUqw38qNLpn1libAN9BsoDx6nbNFio5lA6CuTp9NlK83b89hgyCVq+N5FdBJptINztxn1Z3SaKSKUS5UP60Q==" crossorigin="anonymous" referrerpolicy="no-referrer"></script>
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/simplebar@latest/dist/simplebar.css"/>
+    <script src="https://cdn.jsdelivr.net/npm/simplebar@latest/dist/simplebar.min.js"></script>
     <script src="js/load-index.js"></script>
 
     <!-- Fonts -->
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-    <link href="https://fonts.googleapis.com/css2?family=Bebas+Neue&family=Public+Sans:wght@500&display=swap" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css2?family=Bebas+Neue&family=PT+Sans&display=swap" rel="stylesheet">
+
 
                 
 
@@ -36,28 +39,132 @@
     <!-- Greetings -->
     <div id="greetings-div" class="flex center col" >
 
-        <div class="flex center start">
-            <h1 class="m10 text-title" style="margin-bottom:0px;">Boas vindas!</h1>
+        <div class="flex start row">
+            <h1 id="greetings-main" class="m10 text-title" style="margin-bottom:0px;">Boas vindas!</h1>
         </div> 
-        <div class="flex center start">
-            <h2 class="m10 text-subtitle" style="margin-bottom:10px; margin-top:0px;">Boas vindas!</h2>
+        <div class="flex start row">
+            <h2 class="m10 text-subtitle" style="margin-bottom:10px; margin-top:0px;">Como podemos te ajudar?</h2>
         </div>
-        <div class="flex center start">
-            <p class="m10 text-basic">Este é o site oficial do CEComp</p>
+        <div class="flex start row">
+            <p class="m10 text-basic"></p>
         </div>
-        <div class="flex center start">
-            <p class="m10 text-basic">Centro estudantil do curso de Ciência da Computação da USP Ribeirão.</p>
+        
+        <div class="flex start">
+            <button class="bnt1">Notícias</button>
+            <button class="bnt1">Serviços</button>
+            <button class="bnt1">Loja</button>
         </div>
 
-        <div class="flex center start">
-            <p class="m10 text-basic">Centro estudantil do curso de Ciência da Computação da USP Ribeirão.</p>
+        <div class="flex end" style="margin-top:30px; margin-right:50px;">
+            <a class="a1" href="/">O que é CEComp?</a>
         </div>
 
-        <div class="flex center start">
-            <p class="m10 text-basic">Centro estudantil do curso de Ciência da Computação da USP Ribeirão.</p>
-        </div>
+        <div class="h100"></div>
 
     </div>
+
+
+    <!-- Updates --> 
+    <div id="updates-div" class="flex center col" >
+        <div class="flex start row">
+            <h1 class="m10 text-title" style="margin-bottom:20px;">Notícias</h1>
+        </div>
+
+        <div id="updates-main" class="flex center row" >
+            <div id="updates-scroll" data-simplebar style="height:700px; width:90%;">
+                
+                <div class="flex start row">
+                    <h2 class="text-subtitle">Para todos</h2>
+                </div>
+
+                <div class="flex start row">
+                    <h2 class="text-subtitle">Para todos</h2>
+                </div>
+
+                <div class="flex start row">
+                    <h2 class="text-subtitle">Para todos</h2>
+                </div>
+
+                <div class="flex start row">
+                    <h2 class="text-subtitle">Para todos</h2>
+                </div>
+
+                <div class="flex start row">
+                    <h2 class="text-subtitle">Para todos</h2>
+                </div>
+
+                <div class="flex start row">
+                    <h2 class="text-subtitle">Para todos</h2>
+                </div>
+
+                <div class="flex start row">
+                    <h2 class="text-subtitle">Para todos</h2>
+                </div>
+
+                <div class="flex start row">
+                    <h2 class="text-subtitle">Para todos</h2>
+                </div>
+
+                <div class="flex start row">
+                    <h2 class="text-subtitle">Para todos</h2>
+                </div>
+
+                <div class="flex start row">
+                    <h2 class="text-subtitle">Para todos</h2>
+                </div>
+
+                <div class="flex start row">
+                    <h2 class="text-subtitle">Para todos</h2>
+                </div>
+
+                <div class="flex start row">
+                    <h2 class="text-subtitle">Para todos</h2>
+                </div>
+
+
+            </div>
+        </div>
+
+        <div class="h100"></div>
+
+    </div>
+
+
+    <!-- Services -->
+    <div id="services-div" class="flex center col" >
+        <div class="flex start row">
+            <h1 class="m10 text-title" style="margin-bottom:0px;">Serviços</h1>
+        </div>
+
+        <!-- For all -->
+        <div class="flex start row">
+            <h2 class="m10 text-subtitle" style="margin-top:0px; padding-left:50px;">Para todos</h2>
+        </div>
+
+        <a class="a2 m10" style="padding-left:70px;">Certificados</a>
+        <a class="a2 m10" style="padding-left:70px;">Contato</a>
+        <a class="a2 m10" style="padding-left:70px;">Calendário</a>
+        <a class="a2 m10" style="padding-left:70px;">Certificados</a>
+
+        <!-- For members -->
+        <div class="flex start row">
+            <h2 class="m10 text-subtitle" style="margin-top:35px; padding-left:50px;">Para membros do BCC</h2>
+        </div>
+
+        <a class="a2 m10" style="padding-left:70px;">Certificados</a>
+        <a class="a2 m10" style="padding-left:70px;">Contato</a>
+        <a class="a2 m10" style="padding-left:70px;">Calendário</a>
+        <a class="a2 m10" style="padding-left:70px;">Certificados</a>
+
+
+        <div class="h100"></div>
+
+    </div>
+
+
+
+    <!-- Footer -->
+
 
 
 

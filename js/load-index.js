@@ -1,6 +1,7 @@
 $( document ).ready(function() {
     
     animateLogo();
+    animateGreetings();
 
 });
 
@@ -42,6 +43,31 @@ function animateLogo() {
         }
       });
 
-
 }
 
+function animateGreetings(){
+    dict = ["Hello World!", "Hallo Wereld!", "Bonjour monde!", "Ciao mondo!", "Olá Mundo!", "¡Hola Mundo!", "Labas pasauli!", "Hallo Welt!", "Hej Verden!", "Hei maailma!"]
+    randNumber = Math.floor(Math.random() * dict.length);
+
+    //Step 1
+    $("#greetings-main").delay(5000).animate({
+        opacity: 0,
+        left: "+=50",
+      }, 2000, "swing", function() {
+        
+        //Step 2
+        $("#greetings-main").text(dict[randNumber])
+
+        $("#greetings-main").animate({
+            opacity: 1,
+            left: "+=50",
+          }, 2000, "swing", function() {
+            
+            //Step 3
+            animateGreetings()
+    
+        });
+
+    });
+
+}
