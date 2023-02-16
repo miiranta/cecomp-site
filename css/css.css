@@ -1,0 +1,83 @@
+/*General*/
+body{
+    padding: 0;
+    margin: 0;
+
+    background-color: #1f0017;
+}
+
+/*Flexbox shortcuts*/
+.flex{
+    display: flex;
+}
+
+.col{
+    flex-direction: column;
+}
+
+.row{
+    flex-direction: row;
+}
+
+.center{
+    justify-content: center;
+}
+
+.end{
+    justify-content: flex-end;
+}
+
+.start{
+    justify-content: flex-start;
+}
+
+/*Width shortcuts*/
+.w50{
+    width: 50px;
+}
+
+.w100{
+    width: 100px;
+}
+
+.w200{
+    width: 100px;
+}
+
+.w400{
+    width: 100px;
+}
+
+/*Height shortcuts*/
+.h50{
+    height: 50px;
+}
+
+.h100{
+    height: 100px;
+}
+
+.h200{
+    height: 100px;
+}
+
+.h400{
+    height: 100px;
+}
+
+
+
+
+/*Logo*/
+
+#logo-main{
+    width: 30vw;
+    height: auto;
+}
+
+#logo-div{
+    background-color: white;
+    overflow: hidden;
+}
+
+
