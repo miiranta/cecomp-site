@@ -71,3 +71,20 @@ function animateGreetings(){
     });
 
 }
+
+function jumpTo(location){
+    if(location == "updates"){
+      $("#updates-div")[0].scrollIntoView({
+        behavior: "smooth",
+        block: "start"
+      });
+    }
+
+    if(location == "services"){
+      $("#services-div")[0].scrollIntoView({
+        behavior: "smooth",
+        block: "start"
+      });
+    }
+
+}

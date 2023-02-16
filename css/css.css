@@ -125,6 +125,19 @@ p{
     margin: 100px;
 }
 
+/*Paddings*/
+.p10{
+    padding: 10px;
+}
+
+.p50{
+    padding: 50px;
+}
+
+.p100{
+    padding: 100px;
+}
+
 /*Buttons*/
 .bnt1{
     margin: 7px;
