@@ -29,6 +29,10 @@ p{
     margin: 0;
 }
 
+footer{
+    height: 100px;
+}
+
 /*Flexbox shortcuts*/
 .flex{
     display: flex;
@@ -110,6 +114,12 @@ p{
     font-family: 'PT Sans', sans-serif;
     color:white;
     font-size: 25pt;
+}
+
+.text-tiny{
+    font-family: 'PT Sans', sans-serif;
+    color:white;
+    font-size: 15pt;
 }
 
 /*Margins*/
@@ -319,7 +329,7 @@ p{
     background-color: #744cc3;
 }
 
-/*Footer*/
+
 
 
 
