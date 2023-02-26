@@ -33,6 +33,10 @@ footer{
     height: 100px;
 }
 
+button{
+    cursor:pointer;
+}
+
 /*Flexbox shortcuts*/
 .flex{
     display: flex;

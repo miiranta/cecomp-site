@@ -24,7 +24,10 @@ const server = https.createServer(httpsOptions, exp)
 
 //middleware
 exp.use(redirectToHTTPS([], [], 301));
-exp.use(helmet())
+exp.use(helmet({contentSecurityPolicy: false}))
+
+//
+exp.use(express.static(publicDirectory))
 
 //Routers
 exp.use(routerContent)
