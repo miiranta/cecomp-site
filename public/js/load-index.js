@@ -24,7 +24,7 @@ function animateLogo() {
             anime({
                 targets: '#logo-div',
     
-                height: "25vh",
+                height: "20vh",
     
                 easing: 'spring(1, 80, 20, 0)',
                 duration: 1000,
@@ -34,7 +34,7 @@ function animateLogo() {
             anime({
                 targets: '#logo-main',
     
-                height: "25vh",
+                scale: "0.7",
     
                 easing: 'spring(1, 80, 20, 0)',
                 duration: 1000,

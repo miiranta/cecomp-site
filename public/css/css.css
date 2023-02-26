@@ -287,9 +287,11 @@ button{
 #logo-main{
     margin: 10px;
 
-    width: auto;
-    height: 40vh; /*Changes to 25vh with animation*/
+    width: 450px;
+    height: auto;
 
+    scale: 1; /*Changes to 0.7 with animation*/
+    
     opacity: 0; /*Changes to 1 with animation*/
 }
 
@@ -297,7 +299,7 @@ button{
     background-color: white;
     overflow: hidden;
 
-    height: 100vh; /*Changes to 25vh with animation*/
+    height: 100vh; /*Changes to 20vh with animation*/
 }
 
 /*Greetings*/
