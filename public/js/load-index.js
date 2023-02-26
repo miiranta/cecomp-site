@@ -34,7 +34,7 @@ function animateLogo() {
             anime({
                 targets: '#logo-main',
     
-                scale: "0.7",
+                scale: "0.55",
     
                 easing: 'spring(1, 80, 20, 0)',
                 duration: 1000,
