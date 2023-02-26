@@ -1,3 +1,4 @@
 *.env
 *.pem
+*.sh
 node_modules
