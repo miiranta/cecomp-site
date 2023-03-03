@@ -11,7 +11,7 @@
 #### | Requirements
 
 
-**External:**
+##### **External:**
 >- NodeJS: https://nodejs.org/en/ (LTS version)
 >- Git:    https://git-scm.com/downloads *(of course...)*
 
@@ -25,7 +25,7 @@ git --version
 ~~~
 
 
-**Global NPM modules:**
+##### **Global NPM modules:**
 ~~~
 npm i nodemon -g
 npm i env-cmd -g
@@ -36,14 +36,14 @@ npm i env-cmd -g
 
 #### | Installation
 
-**Copy repository:**
+##### **Copy repository:**
 ~~~
 git clone https://github.com/miiranta/cecomp-site
 ~~~
 
 >*Note: Run all commands from the created folder 'cecomp-site' where package.json is located, not 'src'.*
 
-**Install dependencies:**
+##### **Install dependencies:**
 ~~~
 npm i
 ~~~
@@ -52,7 +52,8 @@ npm i
 
 #### | Configuration
 
-**SSL config:**
+##### **SSL config:**
+
 In order to run in **localhost**:
 >1. Create a folder called 'ssl'.
 >2. Add 'cert.pem' and 'privkey.pem'.
@@ -64,7 +65,7 @@ In order to run in **production**:
 
 
 
-**Environment variables:**
+##### **Environment variables:**
 
 For **localhost**:
 >1. Create a folder called 'config'.
