@@ -1,16 +1,15 @@
 # Cecomp's site
 
----
 
 ## Try it yourself
 <https://luvas.io/>
 
----
 
 ## Setup
 
 
 #### | Requirements
+
 
 **External:**
 >NodeJS: https://nodejs.org/en/ (LTS version)
@@ -33,7 +32,7 @@ npm i env-cmd -g
 ~~~
 >*Note: Use SUDO in linux.*
 
-&nbsp;
+
 
 #### | Installation
 
@@ -49,7 +48,7 @@ git clone https://github.com/miiranta/cecomp-site
 npm i
 ~~~
 
-&nbsp;
+
 
 #### | Configuration
 
@@ -89,10 +88,10 @@ SSLDIR=/etc/letsencrypt/live/your_certbot_url
 
 >*Note: Default values included.*
 
-For **production** (alternative):
+For **production (alternative)**:
 >1. Set your variables in the environment :).
 
-&nbsp;
+
 
 #### | Run
 
@@ -106,7 +105,7 @@ For **production**:
 npm run prod
 ~~~
 
-For **production** (alternative):
+For **production (alternative)**:
 ~~~
 npm start
 ~~~
