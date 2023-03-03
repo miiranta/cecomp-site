@@ -12,8 +12,8 @@
 
 
 **External:**
->NodeJS: https://nodejs.org/en/ (LTS version)
->Git:    https://git-scm.com/downloads *(of course...)*
+>- NodeJS: https://nodejs.org/en/ (LTS version)
+>- Git:    https://git-scm.com/downloads *(of course...)*
 
 >*Note: Don't forget to add to PATH during installation. Also, install NPM.*
 
