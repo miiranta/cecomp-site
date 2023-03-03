@@ -71,8 +71,8 @@ For **localhost**:
 >2. Create a file called 'dev.env' inside 'config'.
 >3. Add the following variables:
 
->PORT_HTTPS=443
->PORT_HTTP=80
+>- PORT_HTTPS=443
+>- PORT_HTTP=80
 
 >*Note: Default values included.*
 
@@ -82,9 +82,9 @@ For **production**:
 >2. Create a file called 'prod.env' inside 'config'.
 >3. Add the following variables:
 
->PORT_HTTPS=443
->PORT_HTTP=80
->SSLDIR=/etc/letsencrypt/live/your_certbot_url
+>- PORT_HTTPS=443
+>- PORT_HTTP=80
+>- SSLDIR=/etc/letsencrypt/live/your_certbot_url
 
 >*Note: Default values included.*
 
