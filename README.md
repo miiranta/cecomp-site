@@ -13,7 +13,7 @@
 
 **External:**
 >NodeJS: https://nodejs.org/en/ (LTS version)
-Git:    https://git-scm.com/downloads *(of course...)*
+>Git:    https://git-scm.com/downloads *(of course...)*
 
 >*Note: Don't forget to add to PATH during installation. Also, install NPM.*
 
@@ -72,7 +72,7 @@ For **localhost**:
 >3. Add the following variables:
 
 >PORT_HTTPS=443
-PORT_HTTP=80
+>PORT_HTTP=80
 
 >*Note: Default values included.*
 
@@ -83,8 +83,8 @@ For **production**:
 >3. Add the following variables:
 
 >PORT_HTTPS=443
-PORT_HTTP=80
-SSLDIR=/etc/letsencrypt/live/your_certbot_url
+>PORT_HTTP=80
+>SSLDIR=/etc/letsencrypt/live/your_certbot_url
 
 >*Note: Default values included.*
 
