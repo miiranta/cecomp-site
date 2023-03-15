@@ -2,4 +2,3 @@
 *.pem
 *.sh
 node_modules
-static

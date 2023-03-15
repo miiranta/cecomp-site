@@ -29,7 +29,6 @@ git --version
 ~~~
 npm i nodemon -g
 npm i env-cmd -g
-npm i @angular/cli -g
 ~~~
 >*Note: Use SUDO in linux.*
 
@@ -39,7 +38,7 @@ npm i @angular/cli -g
 
 ##### **Copy repository:**
 ~~~
-git clone https://github.com/cecomp-rp/site
+git clone https://github.com/miiranta/cecomp-site
 ~~~
 
 >*Note: Run all commands from the created folder 'cecomp-site' where package.json is located, not 'src'.*
@@ -49,17 +48,7 @@ git clone https://github.com/cecomp-rp/site
 npm i
 ~~~
 
-##### **Frontend:**
 
-In order to run in **localhost**:
->1. Create a folder called 'static'.
->2. When you execute "npm run dev", a script will automaticallty clone https://github.com/cecomp-rp/site-front, compile it and move it to 'static'.
-
-In order to run in **production**:
->1. Create a folder called 'static'.
->2. Add your compiled frontend files to 'static' (tested for angular projects).
-
->*Note: Your frontend files need to have a root named "index.html".*
 
 #### | Configuration
 
@@ -123,4 +112,3 @@ npm start
 ~~~
 
 >*Note: Use SUDO in linux.*
-

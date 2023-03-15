@@ -1,0 +1,164 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+    <link rel="stylesheet" href="css/css.css">
+    <title>CEComp</title>
+    <link rel="icon" href="img/icon.png">
+    <meta name="viewport" content="width=device-width, initial-scale=0.4">
+
+    <!-- Dependencies -->
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.6.3/jquery.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/animejs/3.2.1/anime.min.js" integrity="sha512-z4OUqw38qNLpn1libAN9BsoDx6nbNFio5lA6CuTp9NlK83b89hgyCVq+N5FdBJptINztxn1Z3SaKSKUS5UP60Q==" crossorigin="anonymous" referrerpolicy="no-referrer"></script>
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/simplebar@latest/dist/simplebar.css"/>
+    <script src="https://cdn.jsdelivr.net/npm/simplebar@latest/dist/simplebar.min.js"></script>
+    <script src="js/load-index.js"></script>
+
+    <!-- Fonts -->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Bebas+Neue&family=PT+Sans&display=swap" rel="stylesheet">
+
+</head>
+
+<body>
+
+    <!-- Logo -->
+    <div id="logo-div" class="flex center col">
+
+        <div class="flex center row">
+            <img id="logo-main" src="img/logo.png">
+        </div>
+
+    </div>
+
+    <!-- Greetings -->
+    <div id="greetings-div" class="flex center col" style="padding-bottom:100px;">
+
+        <div class="flex start row">
+            <h1 id="greetings-main" class="m10 text-title" style="margin-bottom:0px;">Boas vindas!</h1>
+        </div> 
+        <div class="flex start row">
+            <h2 class="m10 text-subtitle" style="margin-bottom:10px; margin-top:0px;">Como podemos te ajudar?</h2>
+        </div>
+        <div style="height:25px;"></div>
+        
+        <div class="flex start">
+            <button class="bnt1" onclick="jumpTo('updates');">Notícias</button>
+            <button class="bnt1" onclick="jumpTo('services');">Serviços</button>
+            <button class="bnt1" onclick= "location.href = '/store'" >Loja</button>
+        </div>
+
+        <div class="flex end" style="margin-top:30px; margin-right:50px;">
+            <a class="a1" href="/about">O que é CEComp?</a>
+        </div>
+
+        <div class="h100"></div>
+
+    </div>
+
+
+    <!-- Updates --> 
+    <div id="updates-div" class="flex center col" style="padding-bottom:100px;">
+        <div class="flex start row">
+            <h1 class="m10 text-title" style="margin-bottom:20px;">Notícias</h1>
+        </div>
+
+        <div id="updates-main" class="flex center row" >
+            <div id="updates-scroll" data-simplebar style="height:700px; width:90%;">
+                
+                <!-- Noticia 1 --> 
+                <div class="flex start col m10">
+                    <h2 class="m10 text-subtitle" style="margin-top:0px;">Notícia 1</h2>
+                    <p class="m50 text-basic" style="margin-top:0;">O Naruto pode ser um pouco duro às vezes, talvez você não saiba disso, mas o Naruto também cresceu sem pai. Na verdade ele nunca conheceu nenhum de seus pais, e nunca teve nenhum amigo em nossa aldeia. Mesmo assim eu nunca vi ele chorar, ficar zangado ou se dar por vencido, ele está sempre disposto a melhorar, ele quer ser respeitado, é o sonho dele e o Naruto daria a vida por isso sem hesitar. Meu palpite é que ele se cansou de chorar e decidiu fazer alguma coisa a respeito!</p>
+                    
+                    <div class="flex center row">
+                        <img src="img/logo.png" style="width: 200px;">
+                    </div>
+
+                </div>
+                <div class="h50"></div>
+
+                <!-- Noticia 2 --> 
+                <div class="flex start col m10 p10">
+                    <h2 class="m10 text-subtitle" style="margin-top:0px;">Notícia 2</h2>
+                    <p class="m50 text-basic" style="margin-top:0;">O Naruto pode ser um pouco duro às vezes, talvez você não saiba disso, mas o Naruto também cresceu sem pai. Na verdade ele nunca conheceu nenhum de seus pais, e nunca teve nenhum amigo em nossa aldeia. Mesmo assim eu nunca vi ele chorar, ficar zangado ou se dar por vencido, ele está sempre disposto a melhorar, ele quer ser respeitado, é o sonho dele e o Naruto daria a vida por isso sem hesitar. Meu palpite é que ele se cansou de chorar e decidiu fazer alguma coisa a respeito!</p>
+                    
+                    <div class="flex center row">
+                        <img src="img/logo.png" style="width: 200px;">
+                    </div>
+                
+                </div>
+                <div class="h50"></div>
+
+
+            </div>
+        </div>
+
+        <div class="h100"></div>
+
+    </div>
+
+
+    <!-- Services -->
+    <div id="services-div" class="flex center col" style="padding-bottom:100px;">
+        <div class="flex start row">
+            <h1 class="m10 text-title" style="margin-bottom:0px;">Serviços</h1>
+        </div>
+
+        <!-- For all -->
+        <div class="flex start row">
+            <h2 class="m10 text-subtitle" style="margin-top:0px; padding-left:50px;">Para todos</h2>
+        </div>
+
+        <a href="/calendar" class="a2 m10" style="padding-left:70px;">Calendário de eventos</a>
+        <a href="/contact" class="a2 m10" style="padding-left:70px;">Contato</a>
+        <a href="/store" class="a2 m10" style="padding-left:70px;">Loja</a>
+        <a href="/certificates" class="a2 m10" style="padding-left:70px;">Meus certificados</a>
+        <a href="/about" class="a2 m10" style="padding-left:70px;">Sobre nós</a>
+
+        <!-- For members -->
+        <div class="flex start row">
+            <h2 class="m10 text-subtitle" style="margin-top:35px; padding-left:50px;">Para membros do BCC</h2>
+        </div>
+
+        <a href="/transparency" class="a2 m10" style="padding-left:70px;">Transparência</a>
+        <a href="/polls" class="a2 m10" style="padding-left:70px;">Votações</a>
+
+
+        <div class="h100"></div>
+
+    </div>
+
+
+
+    <!-- Footer -->
+    <footer class="flex end row m10">
+
+        <!-- Sec 1 -->
+        <div class="flex center col">
+            <p class="text-basic" style="font-size:15pt; font-weight: 1000; width:400px;">Centro Estudantil da Ciência da Computação</p>
+            <p class="text-basic" style="font-size:15pt;">USP Ribeirão Preto</p>
+            <p class="text-basic" style="font-size:15pt;">XX.XXX.XXX/YYYY-ZZ</p>
+        </div>
+
+        <div style="width:100%;"></div>
+
+        <!-- Sec 2 -->
+        <div class="flex center col m50">
+            <!-- Bota algo aqui -->
+        </div>
+
+        <!-- Sec 3-->
+        <div class="flex center col m50">
+            <!-- Bota algo aqui -->
+        </div>
+
+    </footer>
+
+
+
+</body>
+
+
+</html>

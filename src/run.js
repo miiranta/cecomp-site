@@ -4,10 +4,10 @@ const path                  = require('path');
 const express               = require('express');
 const helmet                = require('helmet')
 const redirectToHTTPS       = require('express-http-to-https').redirectToHTTPS
-const routerEndpoints       = require("./routers/routerEndpoints")
+const routerContent         = require("./routers/routerContent")
 
 //Dirs
-const frontEndDirectory = path.join(__dirname, "../static")
+const publicDirectory = path.join(__dirname, "../public")
 const sslDirectory = process.env.SSLDIR || path.join(__dirname, "../ssl");
 
 //Certbot stuff (HTTPS)
@@ -26,14 +26,11 @@ const server = https.createServer(httpsOptions, exp)
 exp.use(redirectToHTTPS([], [], 301));
 exp.use(helmet({contentSecurityPolicy: false}))
 
-//Load Angular Project
-exp.use(express.static(frontEndDirectory));
+//
+exp.use(express.static(publicDirectory))
 
 //Routers
-exp.use(routerEndpoints)
-
-//Redirects to main page
-exp.get('/*', (req, res) => res.sendFile(frontEndDirectory + '/index.html'));
+exp.use(routerContent)
 
 //Listen to http and redirect to https
 exp.listen(httpport);
