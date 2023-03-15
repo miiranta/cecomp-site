@@ -5,7 +5,7 @@ const router = new express.Router()
 
 
 
-router.get("/", (req, res) => {
+router.get("/teste", (req, res) => {
     res.send("Oi");
 })
 
