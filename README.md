@@ -29,6 +29,7 @@ git --version
 ~~~
 npm i nodemon -g
 npm i env-cmd -g
+npm i @angular/cli -g
 ~~~
 >*Note: Use SUDO in linux.*
 
@@ -38,7 +39,7 @@ npm i env-cmd -g
 
 ##### **Copy repository:**
 ~~~
-git clone https://github.com/miiranta/cecomp-site
+git clone https://github.com/cecomp-rp/site
 ~~~
 
 >*Note: Run all commands from the created folder 'cecomp-site' where package.json is located, not 'src'.*
@@ -48,7 +49,19 @@ git clone https://github.com/miiranta/cecomp-site
 npm i
 ~~~
 
+##### **Frontend:**
 
+In any case:
+>1. Create a folder called 'static'.
+>2. Add your frontend files.
+
+>*Note: Optmized for Angular and root file is "index.html".*
+
+To clone the frontend from the repository https://github.com/cecomp-rp/site-front:
+~~~
+npm run build-front-win
+~~~
+>*Note: For now, windows only ;(*
 
 #### | Configuration
 
