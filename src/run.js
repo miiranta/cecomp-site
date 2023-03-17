@@ -5,6 +5,7 @@ const express               = require('express');
 const helmet                = require('helmet')
 const redirectToHTTPS       = require('express-http-to-https').redirectToHTTPS
 const routerEndpoints       = require("./routers/routerEndpoints")
+const Xuxulo                = require("../Apps/Xuxulo/Xuxulo")
 
 //Dirs
 const sslDirectory = process.env.SSLDIR || path.join(__dirname, "../ssl");
