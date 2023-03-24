@@ -1,10 +1,11 @@
-const fs                    = require('fs');
-const https                 = require('https');
-const path                  = require('path');
-const express               = require('express');
-const helmet                = require('helmet')
-const redirectToHTTPS       = require('express-http-to-https').redirectToHTTPS
-const routerContent         = require("./routers/routerContent")
+const fs = require('fs');
+const https = require('https');
+const path = require('path');
+const express = require('express');
+const helmet = require('helmet')
+const redirectToHTTPS = require('express-http-to-https').redirectToHTTPS
+const routerContent = require("./routers/routerContent")
+const Xuxulo = require("../Apps/Xuxulo/Xuxulo")
 
 //Dirs
 const publicDirectory = path.join(__dirname, "../public")
@@ -18,13 +19,13 @@ const httpsOptions = {
 
 //Setup express
 const httpsport = process.env.PORT_HTTPS;
-const httpport  = process.env.PORT_HTTP;
+const httpport = process.env.PORT_HTTP;
 const exp = express();
 const server = https.createServer(httpsOptions, exp)
 
 //middleware
 exp.use(redirectToHTTPS([], [], 301));
-exp.use(helmet({contentSecurityPolicy: false}))
+exp.use(helmet({ contentSecurityPolicy: false }))
 
 //
 exp.use(express.static(publicDirectory))
@@ -37,5 +38,5 @@ exp.listen(httpport);
 
 //Listen to https
 server.listen(httpsport, () => {
-    console.log("Server is up!")
+  console.log("Server is up!")
 });
