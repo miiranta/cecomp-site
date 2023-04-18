@@ -4,6 +4,7 @@ const path                  = require('path');
 const express               = require('express');
 const helmet                = require('helmet')
 const redirectToHTTPS       = require('express-http-to-https').redirectToHTTPS
+const {redirectWWWToNoWWW}  = require('express-www-redirect')
 const routerContent         = require("./routers/routerContent")
 
 //Dirs
@@ -24,6 +25,7 @@ const server = https.createServer(httpsOptions, exp)
 
 //middleware
 exp.use(redirectToHTTPS([], [], 301));
+exp.use(redirectWWWToNoWWW([], 301))
 exp.use(helmet({contentSecurityPolicy: false}))
 
 //
