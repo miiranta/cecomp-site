@@ -1,9 +1,15 @@
 # Cecomp's site
 
 
-## Try it yourself
-<https://luvas.io/>
+## *Warning*
+Development of this project has migrated!
+<https://github.com/cecomp-rp/site>
 
+## Try it yourself
+<https://cecomp.com.br/>
+
+
+---
 
 ## Setup
 
